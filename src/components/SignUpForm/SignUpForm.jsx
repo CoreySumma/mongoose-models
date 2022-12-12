@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import AllNotePage from '../../pages/AllNotesPage/AllNotesPage';
 import { signUp } from '../../utilities/users-service';
 
 export default class SignUpForm extends Component {
@@ -31,7 +32,7 @@ export default class SignUpForm extends Component {
       // An error occurred
       // Probably due to a duplicate email
       this.setState({ error: 'Sign Up Failed - Try Again' });
-    }
+     }
   };
 
   render() {
