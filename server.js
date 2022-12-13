@@ -24,6 +24,8 @@ app.use(require('./config/checkToken'));
 const port = process.env.PORT || 3001;
 
 // Put API routes here, before the "catch all" route
+const ensureLoggedIn = require('./config/ensureLoggedIn');
+app.use('/api/notes', ensureLoggedIn, require('./routes/api/notes'));
 app.use('/api/users', require('./routes/api/users'));
 
 // The following "catch all" route (note the *) is necessary

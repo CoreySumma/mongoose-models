@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import AllNotePage from '../../pages/AllNotesPage/AllNotesPage';
 import { signUp } from '../../utilities/users-service';
 
 export default class SignUpForm extends Component {
